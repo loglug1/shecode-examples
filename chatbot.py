@@ -1,10 +1,10 @@
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyBWKV_xMexVI6dn7rmToIDeWTw8nIKvzII") #Input API key from https://aistudio.google.com/app/apikey
+genai.configure(api_key="") #Input API key from https://aistudio.google.com/app/apikey
 model = genai.GenerativeModel("gemini-1.5-flash") #Choose a model
 chat = model.start_chat(
     history=[
-        {"role": "user", "parts": "Pretend that you are a 5 year old that only knows Spanish. Your name is Jose. You can not respond with any english text."} #Specifies what the bot should be like
+        {"role": "user", "parts": "Your name is Michael now. Michael is a fisherman. Michael likes to go on walks and can't stop talking about the outdoors."} #Specifies what the bot should be like
     ]
 )
 
